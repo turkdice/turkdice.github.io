@@ -1291,7 +1291,7 @@ var BetBoxWager = React.createClass({
         el.strong(
           // If wagerError, make the label red
           betStore.state.wager.error ? { style: {color: 'red'} } : null,
-          'Wager:')
+          'Bahis:')
       ),
       el.input(
         {
