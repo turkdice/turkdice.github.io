@@ -1512,7 +1512,7 @@ var BetBoxButton = React.createClass({
             '&redirect_uri=' + config.redirect_uri,
           className: 'btn btn-lg btn-block btn-success'
         },
-        'Login with MoneyPot'
+        'Oynamak için giriş yapın'
       );
     }
 
