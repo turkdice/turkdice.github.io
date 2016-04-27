@@ -708,7 +708,7 @@ var UserBox = React.createClass({
               className: 'btn navbar-btn btn-xs ' + (betStore.state.wager.error === 'CANNOT_AFFORD_WAGER' ? 'btn-success' : 'btn-default'),
               onClick: this._openDepositPopup
             },
-            'Deposit'
+            'Coin Yatır'
           ),
           el.button(
             {
@@ -716,7 +716,7 @@ var UserBox = React.createClass({
               className: 'btn btn-default navbar-btn btn-xs',
               onClick: this._openWithdrawPopup
             },
-            'Withdraw'
+            'Coin Çek'
           )
         ),
         // Balance
@@ -751,7 +751,7 @@ var UserBox = React.createClass({
         // Logged in as...
         el.span(
           {className: 'navbar-text'},
-          'Logged in as ',
+          'Giriş yapıldı ',
           el.code(null, worldStore.state.user.uname)
         ),
         // Logout button
@@ -761,7 +761,7 @@ var UserBox = React.createClass({
             onClick: this._onLogout,
             className: 'navbar-btn btn btn-default'
           },
-          'Logout'
+          'Çıkış'
         )
       );
     } else {
@@ -890,8 +890,8 @@ var ChatBoxInput = React.createClass({
                 type: 'text',
                 value: this.state.text,
                 placeholder: worldStore.state.user ?
-                  'Click here and begin typing...' :
-                  'Login to chat',
+                  'Buraya tıklayarak yazabilirsiniz...' :
+                  'Yazmak için giriş yapın...',
                 onChange: this._onChange,
                 onKeyPress: this._onKeyPress,
                 onFocus: this._onFocus,
@@ -912,7 +912,7 @@ var ChatBoxInput = React.createClass({
                 this.state.text.trim().length === 0,
               onClick: this._onSend
             },
-            'Send'
+            'Gönder'
           )
         )
       )
@@ -1485,7 +1485,7 @@ var BetBoxButton = React.createClass({
                 onClick: this._makeBetHandler('>'),
                 disabled: !!this.state.waitingForServer
               },
-              'Bet Hi ', worldStore.state.hotkeysEnabled ? el.kbd(null, 'H') : ''
+              'Üst Bahis', worldStore.state.hotkeysEnabled ? el.kbd(null, 'H') : ''
             )
           ),
           // bet lo
@@ -1499,7 +1499,7 @@ var BetBoxButton = React.createClass({
                 onClick: this._makeBetHandler('<'),
                 disabled: !!this.state.waitingForServer
               },
-              'Bet Lo ', worldStore.state.hotkeysEnabled ? el.kbd(null, 'L') : ''
+              'Alt Bahis ', worldStore.state.hotkeysEnabled ? el.kbd(null, 'L') : ''
             )
           )
         );
@@ -1649,7 +1649,7 @@ var Tabs = React.createClass({
             href: 'javascript:void(0)',
             onClick: this._makeTabChangeHandler('ALL_BETS')
           },
-          'All Bets'
+          'Tüm Bahisler'
         )
       ),
       // Only show MY BETS tab if user is logged in
@@ -1661,7 +1661,7 @@ var Tabs = React.createClass({
               href: 'javascript:void(0)',
               onClick: this._makeTabChangeHandler('MY_BETS')
             },
-            'My Bets'
+            'Bahislerim'
           )
         ),
       // Display faucet tab even to guests so that they're aware that
@@ -1674,7 +1674,7 @@ var Tabs = React.createClass({
               href: 'javascript:void(0)',
               onClick: this._makeTabChangeHandler('FAUCET')
             },
-            el.span(null, 'Faucet ')
+            el.span(null, 'Ücretsiz Bits Kazan ')
           )
         )
     );
@@ -1849,7 +1849,7 @@ var FaucetTabContent = React.createClass({
     if (!worldStore.state.user) {
       return el.p(
         {className: 'lead'},
-        'You must login to claim faucet'
+        'Kazanmak için giriş yapmalısın'
       );
     }
 
@@ -1865,9 +1865,9 @@ var FaucetTabContent = React.createClass({
     case 'SUCCESSFULLY_CLAIMED':
       innerNode = el.div(
         null,
-        'Successfully claimed ' + this.state.claimAmount/100 + ' bits.' +
+        'Kazandın ' + this.state.claimAmount/100 + ' bits.' +
           // TODO: What's the real interval?
-          ' You can claim again in 5 minutes.'
+          ' 5 Dakkika sonra tekrar deniyebilisin.'
       );
       break;
     case 'ALREADY_CLAIMED':
