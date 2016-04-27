@@ -708,7 +708,7 @@ var UserBox = React.createClass({
               className: 'btn navbar-btn btn-xs ' + (betStore.state.wager.error === 'CANNOT_AFFORD_WAGER' ? 'btn-success' : 'btn-default'),
               onClick: this._openDepositPopup
             },
-            'Coin Yatır'
+            'Bits Yatır'
           ),
           el.button(
             {
@@ -716,7 +716,7 @@ var UserBox = React.createClass({
               className: 'btn btn-default navbar-btn btn-xs',
               onClick: this._openWithdrawPopup
             },
-            'Coin Çek'
+            'Bits Çek'
           )
         ),
         // Balance
