@@ -1867,7 +1867,7 @@ var FaucetTabContent = React.createClass({
         null,
         'Kazandın ' + this.state.claimAmount/100 + ' bits.' +
           // TODO: What's the real interval?
-          ' 5 Dakkika sonra tekrar deniyebilisin.'
+          ' 5 Dakkika sonra tekrar deniyebilirsin.'
       );
       break;
     case 'ALREADY_CLAIMED':
