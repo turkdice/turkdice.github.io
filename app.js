@@ -1099,7 +1099,7 @@ var BetBoxChance = React.createClass({
       {},
       el.span(
         {className: 'lead', style: { fontWeight: 'bold' }},
-        'Chance:'
+        'Şans:'
       ),
       innerNode
     );
@@ -1144,7 +1144,7 @@ var BetBoxProfit = React.createClass({
       null,
       el.span(
         {className: 'lead', style: { fontWeight: 'bold' }},
-        'Profit: '
+        'Kazanç: '
       ),
       innerNode
     );
@@ -1456,11 +1456,11 @@ var BetBoxButton = React.createClass({
 
       var errorTranslations = {
         'CANNOT_AFFORD_WAGER': 'Bakiyeniz yetersiz',
-        'INVALID_WAGER': 'Gecersiz Bahis',
-        'INVALID_MULTIPLIER': 'Gecersiz multiplier',
-        'MULTIPLIER_TOO_PRECISE': 'Multiplier Cok Hassas',
-        'MULTIPLIER_TOO_HIGH': 'Multiplier Cok Yuksek',
-        'MULTIPLIER_TOO_LOW': 'Multiplier Cok Dusuk'
+        'INVALID_WAGER': 'Geçersiz Bahis',
+        'INVALID_MULTIPLIER': 'Geçersiz multiplier',
+        'MULTIPLIER_TOO_PRECISE': 'Multiplier Çok Hassas',
+        'MULTIPLIER_TOO_HIGH': 'Multiplier Çok Yüksek',
+        'MULTIPLIER_TOO_LOW': 'Multiplier Çok Düşük'
       };
 
       innerNode = el.button(
@@ -1552,7 +1552,7 @@ var HotkeyToggle = React.createClass({
             onClick: this._onClick,
             style: { marginTop: '-15px' }
           },
-          'Hotkeys: ',
+          'Kısa Yol: ',
           worldStore.state.hotkeysEnabled ?
             el.span({className: 'label label-success'}, 'ON') :
           el.span({className: 'label label-default'}, 'OFF')
