@@ -1455,12 +1455,12 @@ var BetBoxButton = React.createClass({
       // If there's a betbox error, then render button in error state
 
       var errorTranslations = {
-        'CANNOT_AFFORD_WAGER': 'You cannot afford wager',
-        'INVALID_WAGER': 'Invalid wager',
-        'INVALID_MULTIPLIER': 'Invalid multiplier',
-        'MULTIPLIER_TOO_PRECISE': 'Multiplier too precise',
-        'MULTIPLIER_TOO_HIGH': 'Multiplier too high',
-        'MULTIPLIER_TOO_LOW': 'Multiplier too low'
+        'CANNOT_AFFORD_WAGER': 'Bakiyeniz yetersiz',
+        'INVALID_WAGER': 'Gecersiz Bahis',
+        'INVALID_MULTIPLIER': 'Gecersiz multiplier',
+        'MULTIPLIER_TOO_PRECISE': 'Multiplier Cok Hassas',
+        'MULTIPLIER_TOO_HIGH': 'Multiplier Cok Yuksek',
+        'MULTIPLIER_TOO_LOW': 'Multiplier Cok Dusuk'
       };
 
       innerNode = el.button(
