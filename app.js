@@ -708,6 +708,7 @@ var UserBox = React.createClass({
               className: 'btn navbar-btn btn-xs ' + (betStore.state.wager.error === 'CANNOT_AFFORD_WAGER' ? 'btn-success' : 'btn-default'),
               onClick: this._openDepositPopup
             },
+            "işlemler Moneypot güvencesinde gerçekleşmektedir"
             'Bits Yatır'
           ),
           el.button(
