@@ -730,7 +730,7 @@ var UserBox = React.createClass({
            '' :
            el.span(
              {style: { color: '#e67e22'}},
-             ' + ' + (worldStore.state.user.unconfirmed_balance / 100) + ' bits pending'
+             ' + ' + (worldStore.state.user.unconfirmed_balance / 100) + ' bits Onay bekleniyor..'
            )
         ),
         // Refresh button
