@@ -751,7 +751,7 @@ var UserBox = React.createClass({
         // Logged in as...
         el.span(
           {className: 'navbar-text'},
-          'Giriş yapıldı ',
+          'Moneypot ile Giriş yapıldı ',
           el.code(null, worldStore.state.user.uname)
         ),
         // Logout button
