@@ -2364,3 +2364,14 @@ window.addEventListener('message', function(event) {
     Dispatcher.sendAction('START_REFRESHING_USER');
   }
 }, false);
+
+<script type="text/javascript">
+function gizleGoster(){
+var el=document.getElementById('makale');
+el.style.display=(el.style.display=="none") ? "block" : "none";
+}
+</script>
+</head>
+<body>
+<img src="http://img1.blogcu.com/images/h/a/m/hamiyetakan/istanbul-724197.jpg" onclick="gizleGoster()">
+<div id="makale" style="display:none;">yaz birşeyler</div>
