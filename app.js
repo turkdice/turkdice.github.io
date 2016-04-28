@@ -2308,17 +2308,6 @@ function connectToChatServer() {
 }
 
 // This function is passed to the recaptcha.js script and called when
-<script type="text/javascript">
-function gizleGoster(){
-var el=document.getElementById('makale');
-el.style.display=(el.style.display=="none") ? "block" : "none";
-}
-</script>
-</head>
-<body>
-<img src="http://img1.blogcu.com/images/h/a/m/hamiyetakan/istanbul-724197.jpg" onclick="gizleGoster()">
-<div id="makale" style="display:none;">yaz birşeyler</div>
-
 // the script loads and exposes the window.grecaptcha object. We pass it
 // as a prop into the faucet component so that the faucet can update when
 // when grecaptcha is loaded.
