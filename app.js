@@ -2365,18 +2365,3 @@ window.addEventListener('message', function(event) {
   }
 }, false);
 
- <script type="text/javascript">
-String.prototype.rotasyon=function(){ return this=="none" ? "block" : "none";}
-
-Object.prototype.gizleGoster=function(){
-
-return this.style.display=(this.style.display).rotasyon(); 
-
-}
-var el=function(idi){return document.getElementById(idi);}
-
-</script>
-</head>
-<body>
-<img src="http://img1.blogcu.com/images/h/a/m/hamiyetakan/istanbul-724197.jpg" onclick="el('makale').gizleGoster()">
-<div id="makale" style="display:none;">yaz birşeyler</div>
