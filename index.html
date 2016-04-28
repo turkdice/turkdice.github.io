@@ -21,3 +21,27 @@
   <script src="app.js" type="text/javascript"></script>
   <script src="//www.google.com/recaptcha/api.js?render=explicit&onload=onRecaptchaLoad" async defer></script>
 </body>
+
+<html>
+<head>
+<style type="text/css">
+#menu li button {border-width:0px;}
+#menu {list-style:none;}
+#menu li {float:left;padding-left:20px}
+#menu li .altmenu {display:none}
+#menu li button:focus+.altmenu {display:block}
+</style>
+
+</head>
+<body>
+
+<ul id="menu">
+<li><button>menu1</button>
+<div class="altmenu">Altmenu</div></li>
+<li><button>menu1</button>
+<div class="altmenu">Altmenu</div></li>
+<li><button>menu1</button>
+<div class="altmenu">Altmenu</div></li>
+</ul>
+</body>
+</html> 
